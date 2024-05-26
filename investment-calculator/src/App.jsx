@@ -17,7 +17,7 @@ function App() {
     setUserInput((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputIdentifier]: newValue,
+        [inputIdentifier]: +newValue, // for converting string to integer in javascript
       };
     });
   }
